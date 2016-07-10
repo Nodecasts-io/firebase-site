@@ -7,15 +7,16 @@ var Login = React.createClass({
   mixins: [ReactFireMixin],
 
   componentWillMount: function() {
-    var ref = Firebase.database().ref('items');
-    this.bindAsArray(ref, 'items');
+    var ref = Firebase.database().ref('videos');
+    this.bindAsArray(ref, 'videos');
   },
   render: function() {
+    console.log(this.state.videos);
     return (
       <ul>
-      {this.state.items.map((item) => {
-        return <li key={item['.key']} className={css(styles.noStyle)}>
-          {item['.value']}
+      {this.state.videos.map((video) => {
+        return <li key={video['.key']} className={css(styles.noStyle)}>
+          {video['.value']}
         </li>
       })}
       </ul>
