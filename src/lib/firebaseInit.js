@@ -1,9 +1,9 @@
 import Firebase from 'firebase';
 
 const config = {
-  apiKey: 'AIzaSyBkarq6uoTO10kMmMm26wMyZ74VvKMRzk0',
-  databaseURL: 'https://blog-e4ea6.firebaseio.com',
-  authDomain: 'blog-e4ea6.firebaseapp.com',
+  apiKey: 'AIzaSyAZCR8RjntMZ_UbjNz3-zmBSC71S4iW94g',
+  databaseURL: 'https://nodecasts-1271.firebaseio.com',
+  authDomain: 'nodecasts-1271.firebaseapp.com',
 };
 
 Firebase.initializeApp(config);
