@@ -13,13 +13,16 @@ var VideoList = React.createClass({
 
   render: function () {
     return (
-      <ul>
-      {this.state.videos.map((video) => {
-        return <li key={video['.key']} className={css(styles.noStyle)}>
-          {video['.value']}
-        </li>
-      })}
-      </ul>
+      <div>
+        <h2>Our Videos</h2>
+        <ul>
+        {this.state.videos.map((video) => {
+          return <li key={video['.key']} className={css(styles.noStyle)}>
+            {video['.value']}
+          </li>
+        })}
+        </ul>
+      </div>
     )
   }
 })
