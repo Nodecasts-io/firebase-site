@@ -10,8 +10,8 @@ var Login = React.createClass({
     var ref = Firebase.database().ref('videos');
     this.bindAsArray(ref, 'videos');
   },
+
   render: function() {
-    console.log(this.state.videos);
     return (
       <ul>
       {this.state.videos.map((video) => {
@@ -25,9 +25,9 @@ var Login = React.createClass({
 });
 
 const styles = StyleSheet.create({
-    noStyle: {
-        listStyle: 'none'
-    },
+  noStyle: {
+    listStyle: 'none'
+  },
 });
 
 export default Login;
