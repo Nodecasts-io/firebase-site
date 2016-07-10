@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactFireMixin from 'reactfire'
 import Firebase from '../lib/firebaseInit'
+import VideoItem from './VideoItem.jsx'
 import { StyleSheet, css } from 'aphrodite'
 
 var VideoList = React.createClass({
@@ -13,7 +14,7 @@ var VideoList = React.createClass({
 
   render: function () {
     return (
-      <div>
+      <div className="column is-one-third">
         <h2>Our Videos</h2>
         <ul>
         {this.state.videos.map((video) => {

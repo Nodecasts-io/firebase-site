@@ -9,7 +9,7 @@ var LogoutButton = React.createClass({
 
   render: function () {
     return (
-      <button onClick={this.handleClick}>Logout</button>
+      <button className='button is-primary' onClick={this.handleClick}>Logout</button>
     )
   }
 })

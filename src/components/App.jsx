@@ -11,7 +11,7 @@ import Bulma from 'bulma'
 var App = React.createClass({
   render: function () {
     return (
-      <div>
+      <div className="columns">
         <LoginForm />
         <CreateForm />
         <LogoutButton />

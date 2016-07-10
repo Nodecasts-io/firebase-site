@@ -19,7 +19,6 @@ var LoginForm = React.createClass({
   },
 
   handleSubmit: function (e) {
-    e.preventDefault()
     const email = this.state.email.trim()
     const password = this.state.password.trim()
 
@@ -42,18 +41,20 @@ var LoginForm = React.createClass({
     return (
       <div>
         <h2>Login</h2>
-        <form onSubmit={this.handleSubmit}>
+        <form>
           <input
             type='text'
+            className='input'
             placeholder='Email'
             onChange={this.handleEmailChange}
           />
           <input
             type='password'
+            className='input'
             placeholder='Password'
             onChange={this.handlePasswordChange}
           />
-          <input type='submit' value='Submit' />
+          <button className='button is-primary'>Submit</button>
         </form>
       </div>
     )
