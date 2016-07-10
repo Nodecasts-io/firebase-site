@@ -35,7 +35,7 @@ var LoginForm = React.createClass({
         console.log(errorCode, errorMessage)
       })
 
-    this.setState({author: '', text: ''})
+    this.setState({email: '', password: ''})
   },
 
   render: function () {

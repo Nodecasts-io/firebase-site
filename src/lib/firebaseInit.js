@@ -8,4 +8,14 @@ const config = {
 
 Firebase.initializeApp(config)
 
+Firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    // User is signed in.
+    console.log('user is signed in')
+  } else {
+    // No user is signed in.
+    console.log('user is not signed in')
+  }
+})
+
 export default Firebase
