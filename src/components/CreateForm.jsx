@@ -54,10 +54,7 @@ var CreateForm = React.createClass({
             className='input'
             onChange={this.handlePasswordChange}
           />
-          <button
-            className='button is-primary'
-            onClick='handleSubmit'
-          >Submit</button>
+          <button className='button is-primary' onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>
     )

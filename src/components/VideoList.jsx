@@ -2,7 +2,6 @@ import React from 'react'
 import ReactFireMixin from 'reactfire'
 import Firebase from '../lib/firebaseInit'
 import VideoItem from './VideoItem.jsx'
-import { StyleSheet, css } from 'aphrodite'
 
 var VideoList = React.createClass({
   mixins: [ReactFireMixin],
@@ -18,19 +17,15 @@ var VideoList = React.createClass({
         <h2>Our Videos</h2>
         <ul>
         {this.state.videos.map((video) => {
-          return <li key={video['.key']} className={css(styles.noStyle)}>
-            {video['.value']}
-          </li>
+          return <VideoItem
+            key={video['.key']}
+            id={video['.key']}
+            title={video['.value']}
+          />
         })}
         </ul>
       </div>
     )
-  }
-})
-
-const styles = StyleSheet.create({
-  noStyle: {
-    listStyle: 'none'
   }
 })
 

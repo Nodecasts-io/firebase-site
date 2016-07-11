@@ -54,7 +54,7 @@ var LoginForm = React.createClass({
             placeholder='Password'
             onChange={this.handlePasswordChange}
           />
-          <button className='button is-primary'>Submit</button>
+          <button className='button is-primary' onClick={this.handleSubmit}>Submit</button>
         </form>
       </div>
     )
